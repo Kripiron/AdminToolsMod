@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "admintools",
+  "version": "${version}",
+
+  "name": "AdminTools",
+  "description": "Инструменты для облегчения жизни администраторов.",
+  "authors": [],
+  "contact": {},
+
+  "license": "GNU LGPL 3.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.kripiron.admintools.fabric.AdminToolsFabric"
+    ]
+  },
+  "mixins": [
+    "admintools.mixins.json",
+    "admintools-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.6",
+    "minecraft": ">=1.16.5"
+  }
+}
